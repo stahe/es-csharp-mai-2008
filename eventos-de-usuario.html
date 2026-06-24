@@ -359,14 +359,14 @@
   
   
     <li class="md-nav__item">
-      <a href="----fundamentos-del-lenguaje-c.html" class="md-nav__link">
+      <a href="----conceptos-basicos-del-lenguaje-c.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    3.     Fundamentos del lenguaje C#
+    3.     Conceptos básicos del lenguaje C#
   
 
     
@@ -413,14 +413,14 @@
   
   
     <li class="md-nav__item">
-      <a href="clases-net-de-uso-comun.html" class="md-nav__link">
+      <a href="clases-net-de-uso-habitual.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    5. Clases .NET de uso común
+    5. Clases .NET de uso habitual
   
 
     
@@ -639,14 +639,14 @@
   
   
     <li class="md-nav__item">
-      <a href="los-subprocesos-de-ejecucion.html" class="md-nav__link">
+      <a href="los-hilos-de-ejecucion.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    10. Los subprocesos de ejecución
+    10. Los hilos de ejecución
   
 
     
@@ -789,16 +789,16 @@
 
 <p><span id="refheading10401571168783983" name="refheading10401571168783983" class="odt-bookmark-anchor"></span></p>
 <h1 id="8-eventos-de-usuario">8. <span style="color: #365f91">Eventos de usuario</span></h1>
-<p>En el capítulo anterior abordamos el concepto de eventos vinculados a componentes de formulario. Ahora veremos cómo crear eventos en nuestras propias clases.</p>
+<p>En el capítulo anterior abordamos el concepto de eventos vinculados a los componentes de un formulario. Ahora veremos cómo crear eventos en nuestras propias clases.</p>
 <p><span id="refheading10401591168783983" name="refheading10401591168783983" class="odt-bookmark-anchor"></span></p>
 <h2 id="81-objetos-delegados-predefinidos">8.1. <span style="color: #4f81bd">Objetos delegados predefinidos</span></h2>
-<p>El concepto de objeto <em>delegado</em> ya se mencionó en el capítulo anterior, pero solo se trató de forma superficial. Cuando vimos cómo se declaraban los controladores de eventos de los componentes de un formulario, nos encontramos con código similar al siguiente:</p>
+<p>El concepto de objeto <em>delegate</em> ya se mencionó en el capítulo anterior, pero en aquel momento solo se trató de forma superficial. Cuando analizamos cómo se declaraban los controladores de eventos de los componentes de un formulario, nos encontramos con un código similar al siguiente:</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">this</span>.buttonAfficher.Click += <span style="color:#0000ff">new</span> System.<span style="color:#2b91af">EventHandler</span>(<span style="color:#0000ff">this</span>.buttonAfficher_Click);</span></span>
 </code></pre></div>
 
 <p>donde <em>buttonAfficher</em> era un componente de tipo [Button]. Esta clase tiene un campo <strong>Click</strong> definido de la siguiente manera:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000006D600000361A5C9640D.png" width="525" height="260" style="display:inline-block; margin:4px;width:13.891cm;height:6.867cm;" class="odt-zoomable" data-zoom-src="images/10000000000006D600000361A5C9640D.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000006D600000361A5C9640D.png" width="525" height="260" style="display:inline-block; margin:4px;width:13.891cm;height:6.87cm;" class="odt-zoomable" data-zoom-src="images/10000000000006D600000361A5C9640D.png" /></td></tr></table>
 
 <ul>
   <li>[1]: la clase [Button]
@@ -811,22 +811,22 @@
     <ul>
       <li><i>EventHandler </i>es un prototipo (un modelo) de método denominado <b>delegado</b>.
       </li>
-      <li><i>event </i>es una palabra clave que restringe las funcionalidades del <i>delegado </i><b>EventHandler</b>: un objeto <i>delegado </i>tiene más funcionalidades que un objeto <i>event</i>.
+      <li><i>event </i>es una palabra clave que restringe las funcionalidades de <i>delegate y </i><b>EventHandler</b>: un objeto <i>delegate </i>tiene más funcionalidades que un objeto <i>event</i>.
       </li>
     </ul>
   </li>
 </ul>
 
-<p>El <em>delegado</em> <strong>EventHandler</strong> se define de la siguiente manera:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000001AE0000013BDE4AB081.png" width="301" height="220" style="display:inline-block; margin:4px;width:7.96cm;height:5.831cm;" class="odt-zoomable" data-zoom-src="images/10000000000001AE0000013BDE4AB081.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
+<p>El <em>delegate</em> <strong>EventHandler</strong> se define de la siguiente manera:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000001AE0000013BDE4AB081.png" width="301" height="220" style="display:inline-block; margin:4px;width:7.96cm;height:5.83cm;" class="odt-zoomable" data-zoom-src="images/10000000000001AE0000013BDE4AB081.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
-<p>El <em>delegado</em> <strong>EventHandler</strong> designa un modelo de método:</p>
+<p>El <em>delegate</em> <strong>EventHandler</strong> designa un modelo de método:</p>
 <ul>
   <li>cuyo primer parámetro es un tipo <b>Object</b>
   </li>
-  <li>que tiene como segundo parámetro un tipo <b>EventArgs</b>
+  <li>cuyo segundo parámetro es de tipo <b>EventArgs</b>
   </li>
-  <li>sin dar ningún resultado
+  <li>que no devuelve ningún resultado
   </li>
 </ul>
 
@@ -841,32 +841,32 @@
 <p>De este modo, se podrá escribir:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>EventHandler evtHandler=new EventHandler(buttonAfficher_Click);
 </code></pre></div>
-<p>Una variable de tipo <em>delegado</em> es, en realidad, una lista de referencias a métodos que se ajustan al modelo del <em>delegado</em>. Para añadir un nuevo método <em>M</em> a la variable <em>evtHandler</em> anterior, se utiliza la sintaxis:</p>
+<p>Una variable de tipo <em>delegate</em> es, en realidad, una lista de referencias a métodos que se corresponden con el modelo <em>delegate</em>. Para añadir un nuevo método <em>M</em> a la variable <em>evtHandler</em> anterior, se utiliza la sintaxis:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>evtHandler+=new EvtHandler(M);
 </code></pre></div>
-<p>La notación += se puede utilizar incluso si <em>evtHandler</em> es una lista vacía.</p>
+<p>La notación += se puede utilizar aunque <em>evtHandler</em> sea una lista vacía.</p>
 <p>La instrucción:</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">this</span>.buttonAfficher.Click += <span style="color:#0000ff">new</span> System.<span style="color:#2b91af">EventHandler</span>(<span style="color:#0000ff">this</span>.buttonAfficher_Click);</span></span>
 </code></pre></div>
 
-<p>añade un método de tipo <em>EventHandler</em> a la lista de métodos del evento <em>buttonAfficher.Click</em>. Cuando se produce el evento <em>Click</em> en el componente buttonAfficher, VB ejecuta la instrucción:</p>
+<p>Añade un método de tipo <em>EventHandler</em> a la lista de métodos del evento <em>buttonAfficher.Click</em>. Cuando se produce el evento <em>Click</em> en el componente buttonAfficher, VB ejecuta la instrucción:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>            buttonAfficher.Click(source, evt);
 </code></pre></div>
 <p>donde:</p>
 <ul>
   <li><i>source </i>es el componente de tipo <i>object </i>que origina el evento
   </li>
-  <li><i>evt </i>es de tipo <i>EventArgs </i>y no contiene información
+  <li><i>evt, </i>de tipo <i>EventArgs, </i>y no contiene información
   </li>
 </ul>
 
-<p>Todos los métodos con la firma <em>void M(object,EventArgs)</em> que se han asociado al evento <em>Click</em> mediante:</p>
+<p>Todos los métodos de firma <em>void M(object,EventArgs)</em> que se han asociado al evento <em>Click</em> mediante:</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">this</span>.buttonAfficher.Click += <span style="color:#0000ff">new</span> System.<span style="color:#2b91af">EventHandler</span>(M);</span></span>
 </code></pre></div>
 
-<p>se llamarán con los parámetros (<em>source</em>, <em>evt</em>) transmitidos por VB.</p>
+<p>se invocarán con los parámetros (<em>source</em>, <em>evt</em>) transmitidos por VB.</p>
 <p><span id="refheading10401611168783983" name="refheading10401611168783983" class="odt-bookmark-anchor"></span></p>
 <h2 id="82-definir-objetos-delegados">8.2. <span style="color: #4f81bd">Definir objetos delegados</span></h2>
 <p>La instrucción</p>
@@ -874,8 +874,8 @@
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">public</span> <span style="color:#0000ff">delegate</span> <span style="color:#0000ff">int</span> Opération(<span style="color:#0000ff">int</span> n1, <span style="color:#0000ff">int</span> n2);</span></span>
 </code></pre></div>
 
-<p>define un tipo llamado <em>Opération</em> que representa un prototipo de función que acepta dos enteros y devuelve un entero. Es la palabra clave <em>delegate</em> la que convierte a <em>Opération</em> en una definición de prototipo de función.</p>
-<p>Una variable <em>op</em> de tipo <em>Opération</em> tendrá la función de almacenar una lista de funciones que se ajusten al prototipo <em>Opération</em>:</p>
+<p>define un tipo denominado <em>Opération</em> que representa un prototipo de función que acepta dos enteros y devuelve un entero. Es la palabra clave <em>delegate</em> la que convierte a <em>Opération</em> en una definición de prototipo de función.</p>
+<p>Una variable <em>op</em> de tipo <em>Opération</em> tendrá la función de almacenar una lista de funciones que se correspondan con el prototipo <em>Opération</em>:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>int f1(int,int)
 </code></pre></div>
@@ -888,59 +888,59 @@
 </code></pre></div>
 </div></td></tr></table>
 
-<p>El almacenamiento de un método <em>fi</em> en la variable <em>op</em> se realiza mediante <em>op=new Operación(fi)</em> o, más sencillamente, mediante <em>op=fi.</em> Para añadir un método <em>fj</em> a la lista de funciones ya registradas, se escribe <em>op+= fj</em>. Para eliminar un método <em>fk</em> ya registrado, se escribe <em>op-=fk</em>. Si en nuestro ejemplo escribimos <em>n=op(n1,n2)</em>, se ejecutarán todos los métodos registrados en la variable <em>op</em> con los parámetros <em>n1</em> y <em>n2</em>. El resultado <em>n</em> obtenido será el del último método ejecutado. No es posible obtener los resultados producidos por el conjunto de métodos. Por esta razón, si se registra una lista de métodos en una función delegada, estos suelen devolver un resultado de tipo <em>void</em>.</p>
+<p>El registro de un método <em>fi</em> en la variable <em>op</em> se realiza mediante <em>op=new Operación(fi)</em> o, más sencillamente, mediante <em>op=fi.</em>. Para añadir un método <em>fj</em> a la lista de funciones ya registradas, se escribe <em>op+= fj</em>. Para eliminar un método <em>fk</em> ya registrado, se escribe <em>op-=fk</em>. Si en nuestro ejemplo escribimos <em>n=op(n1,n2)</em>, se ejecutarán todos los métodos registrados en la variable <em>op</em> con los parámetros <em>n1</em> y <em>n2</em>. El resultado <em>n</em> obtenido será el del último método ejecutado. No es posible obtener los resultados generados por todos los métodos. Por este motivo, si se almacena una lista de métodos en una función delegada, estos suelen devolver un resultado de tipo <em>void</em>.</p>
 <p>Consideremos el siguiente ejemplo:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span> System;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">namespace</span> Chap6 {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">class</span> <span style="color:#2b91af">Class1</span> {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        // definición de un prototipo de función</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        // acepta 2 enteros como parámetros y devuelve un entero</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        // acepta dos enteros como parámetros y devuelve un entero</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">public</span> <span style="color:#0000ff">delegate</span> <span style="color:#0000ff">int</span> Opération(<span style="color:#0000ff">int</span> n1, <span style="color:#0000ff">int</span> n2);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        // dos métodos de instancia correspondientes al prototipo</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">public</span> <span style="color:#0000ff">int</span> Ajouter(<span style="color:#0000ff">int</span> n1, <span style="color:#0000ff">int</span> n2) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#2b91af">Console</span>.WriteLine(<span style="color:#a31515">&quot;Ajouter(&quot;</span> + n1 + <span style="color:#a31515">&quot;,&quot;</span> + n2 + <span style="color:#a31515">&quot;)&quot;</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">return</span> n1 + n2;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        }//añada</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        }//añadir</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">public</span> <span style="color:#0000ff">int</span> Soustraire(<span style="color:#0000ff">int</span> n1, <span style="color:#0000ff">int</span> n2) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#2b91af">Console</span>.WriteLine(<span style="color:#a31515">&quot;Soustraire(&quot;</span> + n1 + <span style="color:#a31515">&quot;,&quot;</span> + n2 + <span style="color:#a31515">&quot;)&quot;</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">return</span> n1 - n2;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        }//reste</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        // un método estático correspondiente al prototipo</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        }//restar</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        //: un método estático correspondiente al prototipo</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">public</span> <span style="color:#0000ff">static</span> <span style="color:#0000ff">int</span> Augmenter(<span style="color:#0000ff">int</span> n1, <span style="color:#0000ff">int</span> n2) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#2b91af">Console</span>.WriteLine(<span style="color:#a31515">&quot;Augmenter(&quot;</span> + n1 + <span style="color:#a31515">&quot;,&quot;</span> + n2 + <span style="color:#a31515">&quot;)&quot;</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">return</span> n1 + 2 * n2;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        }//aumentar</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">static</span> <span style="color:#0000ff">void</span> Main(<span style="color:#0000ff">string</span>[] args) {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            // definir un objeto de operación para almacenar funciones en él</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            // registramos el aumento de la función estática</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            // se define un objeto de tipo «operación» para registrar funciones en él</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            // se registra la función estática «aumentar»</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            Opération op = Augmenter;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            // se ejecuta el delegado</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">int</span> n = op(4, 7);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#2b91af">Console</span>.WriteLine(<span style="color:#a31515">&quot;n=&quot;</span> + n);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            // creación de un objeto c1 de tipo clase1</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            // creación de un objeto c1 de tipo class1</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#2b91af">Class1</span> c1 = <span style="color:#0000ff">new</span> <span style="color:#2b91af">Class1</span>();</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            // el método add de c1 se registra en el delegado</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            // se registra en el delegado el método «añadir» de c1</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            op = c1.Ajouter;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            // ejecución del objeto delegado</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            n = op(2, 3);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#2b91af">Console</span>.WriteLine(<span style="color:#a31515">&quot;n=&quot;</span> + n);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            // registramos el método de sustracción de c1 en el delegado</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            // se registra en el delegado el método «restar» de c1</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            op = c1.Soustraire;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            n = op(2, 3);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#2b91af">Console</span>.WriteLine(<span style="color:#a31515">&quot;n=&quot;</span> + n);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            //registro de dos funciones en el delegado</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            //: registro de dos funciones en el delegado</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            op = c1.Ajouter;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            op += c1.Soustraire;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            // ejecución del objeto delegado</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            op(0, 0);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            // eliminar una función del delegado</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            // se elimina una función del delegado</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            op -= c1.Soustraire;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            // se ejecuta el delegado</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            op(1, 1);</span></span>
@@ -952,35 +952,35 @@
 <ul>
   <li>línea 3: define una clase <i>Class1</i>.
   </li>
-  <li>línea 6: definición del <i>delegado Opération</i>: un prototipo de métodos que aceptan dos parámetros de tipo <i>int </i>y devuelven un resultado de tipo <i>int</i>
+  <li>línea 6: definición de <i>delegate Opération</i>: un prototipo de métodos que aceptan dos parámetros de tipo <i>int </i>y devuelven un resultado de tipo <i>int</i>
   </li>
-  <li>líneas 9-12: el método de instancia <i>Add </i>tiene la firma del <i>delegado Operation</i>.
+  <li>líneas 9-12: el método de instancia <i>Ajouter </i>tiene la firma del <i>delegado Opération</i>.
   </li>
   <li>líneas 14-17: el método de instancia <i>Soustraire </i>tiene la firma del <i>delegado Opération</i>.
   </li>
-  <li>líneas 20-23: el método <b>de clase </b><i>Aumentar </i>tiene la firma del <i>delegado Operación</i>.
+  <li>líneas 20-23: el método <b>de clase </b><i>Augmenter </i>tiene la firma del <i>delegado Opération</i>.
   </li>
-  <li>línea 25: el método <i>Main </i>ejecutado
+  <li>línea 25: se ejecuta el método <i>Main</i>
   </li>
   <li>línea 20: la variable <i>op </i>es de tipo <i>delegado Operación</i>. Contendrá una lista de métodos con la firma del tipo <i>delegado Operación. </i>Se le asigna una primera referencia de método, la del método estático <i>Class1.Augmenter</i>.
   </li>
-  <li>línea 31: se ejecuta el <i>delegado op</i>: se ejecutarán todos los métodos a los que hace referencia <i>op</i>. Se ejecutarán con los parámetros pasados al <i>delegado op. </i>Aquí, solo se ejecutará el método estático <i>Class1.Augmenter</i>.
+  <li>línea 31: se ejecuta <i>delegate op</i>: se ejecutarán todos los métodos a los que hace referencia <i>op</i>. Se ejecutarán con los parámetros pasados a <i>delegate y op.. </i>En este caso, solo se ejecutará el método estático <i>Class1.Augmenter</i>.
   </li>
   <li>línea 35: se crea una instancia <i>c1 </i>de la clase <i>Class1</i>.
   </li>
-  <li>línea 37: el método de instancia <i>c1.Ajouter </i>se asigna al <i>delegado op</i>. <i>Aumentar </i>era un método estático, <i>Añadir </i>es un método de instancia. Se ha querido demostrar que esto no tiene importancia.
+  <li>línea 37: el método de instancia <i>c1.Ajouter </i>se asigna al <i>delegado op</i>. <i>Augmenter </i>era un método estático, <i>Ajouter </i>es un método de instancia. Se ha querido demostrar que esto no tiene importancia.
   </li>
-  <li>línea 39: se ejecuta el <i>delegado op</i>: se ejecutará el método <i>Añadir </i>con los parámetros pasados al <i>delegado op</i>.
+  <li>Línea 39: se ejecuta <i>delegate op</i>: el método <i>Ajouter </i>se ejecutará con los parámetros pasados a <i>delegate op</i>.
   </li>
-  <li>línea 42: se hace lo mismo con el método de instancia <i>Soustraire</i>.
+  <li>línea 42: se repite el mismo proceso con el método de instancia <i>Soustraire</i>.
   </li>
-  <li>Líneas 46-47: se colocan los métodos <i>«Añadir» </i>y <i>«Restar» </i>en el <i>delegado op</i>.
+  <li>Líneas 46-47: se colocan los métodos <i>Ajouter </i>y <i>Soustraire </i>en <i>delegate y op</i>.
   </li>
-  <li>línea 49: se ejecuta el <i>delegado op</i>: los dos métodos <i>Añadir </i>y <i>Restar </i>se ejecutarán con los parámetros pasados al <i>delegado op</i>.
+  <li>Línea 49: se ejecuta <i>delegate op</i>: los dos métodos <i>Ajouter </i>y <i>Soustraire </i>se ejecutarán con los parámetros pasados a <i>delegate y op</i>.
   </li>
-  <li>línea 51: se elimina el método <i>Soustraire </i>del <i>delegado op</i>.
+  <li>línea 51: el método <i>Soustraire </i>se elimina de <i>delegate y op</i>.
   </li>
-  <li>línea 53: se ejecuta el <i>delegado op</i>: se ejecutará el método restante, <i>Añadir</i>.
+  <li>línea 53: se ejecuta el <i>delegate op</i>: se va a ejecutar el método restante <i>Ajouter</i>.
   </li>
 </ul>
 
@@ -1005,60 +1005,60 @@
 </code></pre></div></td></tr></table></div>
 <p><span id="refheading10401631168783983" name="refheading10401631168783983" class="odt-bookmark-anchor"></span></p>
 <h2 id="83-delegados-o-interfaces">8.3. <span style="color: #4f81bd">¿Delegados o interfaces?</span></h2>
-<p>Los conceptos de <em>delegados</em> e interfaces pueden parecer bastante similares y cabe preguntarse cuáles son exactamente las diferencias entre ambos. Tomemos el siguiente ejemplo, similar a uno ya estudiado:</p>
+<p>Los conceptos de <em>delegates</em> e interfaces pueden parecer bastante similares y cabe preguntarse cuáles son exactamente las diferencias entre ambos. Tomemos el siguiente ejemplo, similar a uno ya estudiado:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span> System;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">namespace</span> Chap6 {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">class</span> <span style="color:#2b91af">Program1</span> {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        // definición de un prototipo de función</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        // acepta 2 enteros como parámetros y devuelve un entero</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        // acepta dos enteros como parámetros y devuelve un entero</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">public</span> <span style="color:#0000ff">delegate</span> <span style="color:#0000ff">int</span> <span style="color:#2b91af">Opération</span>(<span style="color:#0000ff">int</span> n1, <span style="color:#0000ff">int</span> n2);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        // dos métodos de instancia correspondientes al prototipo</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        // dos métodos de instancia que se corresponden con el prototipo</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">public</span> <span style="color:#0000ff">static</span> <span style="color:#0000ff">int</span> Ajouter(<span style="color:#0000ff">int</span> n1, <span style="color:#0000ff">int</span> n2) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#2b91af">Console</span>.WriteLine(<span style="color:#a31515">&quot;Ajouter(&quot;</span> + n1 + <span style="color:#a31515">&quot;,&quot;</span> + n2 + <span style="color:#a31515">&quot;)&quot;</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">return</span> n1 + n2;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        }//añada</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        }//añadir</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">public</span> <span style="color:#0000ff">static</span> <span style="color:#0000ff">int</span> Soustraire(<span style="color:#0000ff">int</span> n1, <span style="color:#0000ff">int</span> n2) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#2b91af">Console</span>.WriteLine(<span style="color:#a31515">&quot;Soustraire(&quot;</span> + n1 + <span style="color:#a31515">&quot;,&quot;</span> + n2 + <span style="color:#a31515">&quot;)&quot;</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">return</span> n1 - n2;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        }//reste</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        }//restar</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        // Ejecución de un delegado</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">public</span> <span style="color:#0000ff">static</span> <span style="color:#0000ff">int</span> Execute(<span style="color:#2b91af">Opération</span> op, <span style="color:#0000ff">int</span> n1, <span style="color:#0000ff">int</span> n2){</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">return</span> op(n1, n2);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">static</span> <span style="color:#0000ff">void</span> Main(<span style="color:#0000ff">string</span>[] args) {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            // delegar la ejecución Añadir</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            // ejecución del delegado «Añadir»</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#2b91af">Console</span>.WriteLine(Execute(Ajouter, 2, 3));</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            // ejecución delegada Restar</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            // ejecución del delegado Restar</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#2b91af">Console</span>.WriteLine(Execute(Soustraire, 2, 3));</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            // ejecutar un delegado de multidifusión</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            // ejecución de un delegado multicast</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#2b91af">Opération</span> op = Ajouter;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            op += Soustraire;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#2b91af">Console</span>.WriteLine(Execute(op, 2, 3));</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            // eliminar una función del delegado</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            // Se elimina una función del delegado</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            op -= Soustraire;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            // se ejecuta el delegado</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            // ejecución del delegado</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#2b91af">Console</span>.WriteLine(Execute(op, 2, 3));</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>En la línea 20, el método <em>Execute</em> espera una referencia a un objeto del tipo <em>delegado Operación</em> definido en la línea 6. Esto permite pasar al método <em>Execute</em> diferentes métodos (líneas 26, 28, 32 y 36). Esta propiedad de polimorfismo también se puede obtener con una interfaz:</p>
+<p>En la línea 20, el método <em>Execute</em> espera una referencia a un objeto del tipo <em>delegado «Opération»</em>, definido en la línea 6. Esto permite pasar al método <em>Execute</em> diferentes métodos (líneas 26, 28, 32 y 36). Esta propiedad de polimorfismo también se puede conseguir con una interfaz:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span> System;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">namespace</span> Chap6 {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    // interfaz IOperation</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">public</span> <span style="color:#0000ff">interface</span> <span style="color:#2b91af">IOperation</span> {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">int</span> operation(<span style="color:#0000ff">int</span> n1, <span style="color:#0000ff">int</span> n2);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    // clase Añadir</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">public</span> <span style="color:#0000ff">class</span> <span style="color:#2b91af">Ajouter</span> : <span style="color:#2b91af">IOperation</span> {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">public</span> <span style="color:#0000ff">int</span> operation(<span style="color:#0000ff">int</span> n1, <span style="color:#0000ff">int</span> n2) {</span></span>
@@ -1066,7 +1066,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">return</span> n1 + n2;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    // clase Restar</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">public</span> <span style="color:#0000ff">class</span> <span style="color:#2b91af">Soustraire</span> : <span style="color:#2b91af">IOperation</span> {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">public</span> <span style="color:#0000ff">int</span> operation(<span style="color:#0000ff">int</span> n1, <span style="color:#0000ff">int</span> n2) {</span></span>
@@ -1074,18 +1074,18 @@
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">return</span> n1 - n2;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    // clase de prueba</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">public</span> <span style="color:#0000ff">static</span> <span style="color:#0000ff">class</span> <span style="color:#2b91af">Program2</span> {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        // Ejecución del método único de la interfaz IOperation</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        // Ejecución del único método de la interfaz IOperation</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">public</span> <span style="color:#0000ff">static</span> <span style="color:#0000ff">int</span> Execute(<span style="color:#2b91af">IOperation</span> op, <span style="color:#0000ff">int</span> n1, <span style="color:#0000ff">int</span> n2) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">return</span> op.operation(n1, n2);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">public</span> <span style="color:#0000ff">static</span> <span style="color:#0000ff">void</span> Main() {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            // delegar la ejecución Añadir</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            // ejecución del delegado «Sumar»</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#2b91af">Console</span>.WriteLine(Execute(<span style="color:#0000ff">new</span> <span style="color:#2b91af">Ajouter</span>(), 2, 3));</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            // ejecución delegada Restar</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            // Ejecución del delegado «Restar»</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#2b91af">Console</span>.WriteLine(Execute(<span style="color:#0000ff">new</span> <span style="color:#2b91af">Soustraire</span>(), 2, 3));</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
@@ -1101,12 +1101,12 @@
   </li>
 </ul>
 
-<p>Se aprecia claramente el aspecto polimórfico que tenía el parámetro de tipo <em>delegado</em> del ejemplo anterior. Ambos ejemplos muestran al mismo tiempo las diferencias entre estos dos conceptos.</p>
-<p>Los tipos <em>delegado</em> e <em>interfaz</em> son intercambiables </p>
+<p>Aquí se aprecia claramente el carácter polimórfico que tenía el parámetro de tipo <em>delegate</em> del ejemplo anterior. Ambos ejemplos muestran, al mismo tiempo, las diferencias entre estos dos conceptos.</p>
+<p>Los tipos <em>delegate</em> y <em>interface</em> son intercambiables </p>
 <ul>
-  <li>si la interfaz solo tiene un método. De hecho, el tipo <i>delegado </i>es una envoltura para un único método, mientras que la interfaz puede definir varios métodos.
+  <li>si la interfaz solo tiene un método. De hecho, el tipo <i>delegate </i>es una envoltura para un único método, mientras que la interfaz puede definir varios métodos.
   </li>
-  <li>si no se utiliza el aspecto multicast del <i>delegado</i>. De hecho, este concepto de multicast no existe en la interfaz.
+  <li>si no se utiliza el aspecto de multidifusión de <i>delegate</i>. De hecho, este concepto de multidifusión no existe en la interfaz.
   </li>
 </ul>
 
@@ -1116,46 +1116,46 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">int</span> Execute(<span style="color:#2b91af">Opération</span> op, <span style="color:#0000ff">int</span> n1, <span style="color:#0000ff">int</span> n2)</span></span>
 </code></pre></div>
 
-<p>La segunda, que utiliza el <em>delegado,</em> puede resultar más flexible de usar. De hecho, en la primera firma, el primer parámetro del método debe implementar la interfaz <em>IOperation</em>. Esto obliga a crear una clase para definir el método que se va a pasar como primer parámetro al método <em>Execute</em>. En la segunda firma, cualquier método existente que tenga la firma correcta sirve. No hay que realizar ninguna construcción adicional.</p>
+<p>La segunda, que utiliza el <em>delegate,</em> puede resultar más flexible de usar. De hecho, en la primera firma, el primer parámetro del método debe implementar la interfaz <em>IOperation</em>. Esto obliga a crear una clase para definir en ella el método que se va a pasar como primer parámetro al método <em>Execute</em>. En la segunda firma, cualquier método existente que tenga la firma correcta sirve. No es necesario realizar ninguna construcción adicional.</p>
 <p><span id="refheading10401651168783983" name="refheading10401651168783983" class="odt-bookmark-anchor"></span></p>
 <h2 id="84-gestion-de-eventos">8.4. <span style="color: #4f81bd">Gestión de eventos</span></h2>
-<p>Los objetos <em>delegado</em> pueden utilizarse para definir eventos. Una clase <em>C1</em> puede definir un evento <em>evt</em> de la siguiente manera:</p>
+<p>Los objetos <em>delegate</em> pueden utilizarse para definir eventos. Una clase <em>C1</em> puede definir un evento <em>evt</em> de la siguiente manera:</p>
 <ul>
-  <li>se define un tipo <i>delegado </i>dentro o fuera de la clase C1:
+  <li>se define un tipo <i>delegate </i>dentro o fuera de la clase C1:
   </li>
 </ul>
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>delegate TResult Evt(T1 param1, T2 param2, ...);
 </code></pre></div>
 <ul>
-  <li>la clase <i>C1 </i>define un campo de tipo <i>delegado Evt</i>:
+  <li>la clase <i>C1 </i>define un campo de tipo <i>delegate Evt</i>:
   </li>
 </ul>
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>public Evt Evt1;
 </code></pre></div>
 <ul>
-  <li>cuando una instancia <i>c1 </i>de la clase <i>C1 </i>quiera notificar un evento, ejecutará su <i>delegado Evt1 </i>pasándole los parámetros definidos por el <i>delegado Evt</i>. Todos los métodos registrados en el <i>delegado Evt1 </i>se ejecutarán entonces con estos parámetros. Se puede decir que han sido notificados del evento <i>Evt1</i>.
+  <li>cuando una instancia <i>c1 </i>de la clase <i>C1 </i>quiera notificar un evento, ejecutará su <i>delegado Evt1 </i>pasándole los parámetros definidos por el <i>delegado Evt</i>. Todos los métodos registrados en <i>delegate</i> y <i>Evt1 </i>se ejecutarán entonces con estos parámetros. Se puede decir que han sido notificados del evento <i>Evt1</i>.
   </li>
-  <li>Si un objeto <i>c2 </i>que utiliza un objeto <i>c1 </i>desea ser notificado de la ocurrencia del evento <i>Evt1 </i>en el objeto <i>c1</i>, registrará uno de sus métodos c2.M en el objeto delegado c1.Evt1 del objeto <i>c1.</i> De este modo, su método c2.M se ejecutará cada vez que se produzca el evento <i>Evt1 </i>en el objeto <i>c1</i>. También podrá darse de baja cuando ya no desee recibir notificaciones del evento.
+  <li>Si un objeto <i>c2 </i>que utiliza un objeto <i>c1 </i>desea ser notificado de la ocurrencia del evento <i>Evt1 </i>en el objeto <i>c1</i>, registrará uno de sus métodos, c2.M, en el objeto delegado c1.Evt1 del objeto <i>c1.. </i>De este modo, su método c2.M se ejecutará cada vez que elevento <i>Evt1 </i>se produzca en el objeto <i>c1</i>. También podrá darse de baja cuando ya no desee recibir notificaciones sobre el evento.
   </li>
-  <li>Dado que el objeto delegado c1.Evt1 puede registrar varios métodos, diferentes objetos podrán registrarse en el delegado c1.Evt1 para recibir notificaciones del evento <i>Evt1 </i>en <i>c1</i>.
+  <li>Dado que el objeto delegado c1.Evt1 puede registrar varios métodos, diferentes objetos <i>ci </i>podrán registrarse en el delegado c1.Evt1 para recibir notificaciones del evento <i>Evt1 </i>en <i>c1</i>.
   </li>
 </ul>
 
 <p>En este escenario, tenemos:</p>
 <ul>
-  <li>una clase que señala un evento
+  <li>una clase que notifica un evento
   </li>
-  <li>clases a las que se notifica este evento. Se dice que se suscriben al evento.
+  <li>unas clases a las que se notifica dicho evento. Se dice que se suscriben al evento.
   </li>
-  <li>un tipo <i>delegado </i>que define la firma de los métodos a los que se notificará el evento
+  <li>un tipo <i>delegate </i>que define la firma de los métodos a los que se notificará el evento
   </li>
 </ul>
 
 <p>El marco .NET define:</p>
 <ul>
-  <li>una firma estándar del <i>delegado </i>de un evento
+  <li>una firma estándar del <i>delegate </i>de un evento
   </li>
 </ul>
 
@@ -1164,9 +1164,9 @@
 <ul>
   <li><i>source</i>: el objeto que ha notificado el evento
   </li>
-  <li><i>evtInfo</i>: un objeto de tipo <i>EventArgs </i>o derivado que proporciona información sobre el evento
+  <li><i>evtInfo</i>: un objeto de tipo <i>EventArgs </i>o derivado que aporta información sobre el evento
   </li>
-  <li>el nombre del <i>delegado </i>debe terminar en <i>EventHandler</i>
+  <li>el nombre del <i>delegate </i>debe terminar en <i>EventHandler</i>
   </li>
 </ul>
 
@@ -1183,7 +1183,7 @@
 <a id="__codelineno-11-3" name="__codelineno-11-3"></a>...
 <a id="__codelineno-11-4" name="__codelineno-11-4"></a>}
 </code></pre></div></td></tr></table></div>
-<p>El campo <em>Evt1</em> es de tipo <em>delegado</em>. La palabra clave <em>event</em> sirve para restringir las operaciones que se pueden realizar sobre él:</p>
+<p>El campo <em>Evt1</em> es de tipo <em>delegate</em>. La palabra clave <em>event</em> sirve para restringir las operaciones que se pueden realizar sobre él:</p>
 <ul>
   <li>desde fuera de la clase <i>C1</i>, solo son posibles las operaciones += y -=. Esto impide la eliminación (por ejemplo, por error del desarrollador) de los métodos suscritos al evento. Solo se puede suscribirse (+=) o darse de baja (-=) del evento.
   </li>
@@ -1191,17 +1191,17 @@
   </li>
 </ul>
 
-<p>El marco .NET proporciona un método genérico que cumple con la firma del <em>delegado</em> de un evento:</p>
+<p>El marco .NET proporciona un método genérico que cumple con la firma de <em>delegate</em> de un evento:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">public</span><span class="w"> </span><span class="k">delegate</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="n">EventHandler</span><span class="o">&lt;</span><span class="n">TEventArgs</span><span class="o">&gt;</span><span class="p">(</span><span class="kt">object</span><span class="w"> </span><span class="n">source</span><span class="p">,</span><span class="w"> </span><span class="n">TEventArgs</span><span class="w"> </span><span class="n">evtInfo</span><span class="p">)</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">TEventArgs</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">EventArgs</span>
 </code></pre></div>
 <ul>
-  <li>el <i>delegado EventHandler </i>utiliza el tipo genérico <i>TEventArgs, </i>que es el tipo de su segundo parámetro
+  <li>el <i>delegate EventHandler </i>utiliza el tipo genérico <i>TEventArgs, </i>que es el tipo de su segundo parámetro
   </li>
-  <li>el tipo <i>TEventArgs </i>debe derivarse del tipo <i>EventsArgs </i>(<i>where TEventArgs : EventArgs</i>)
+  <li>el tipo <i>TEventArgs </i>debe derivarse del tipo <i>EventsArgs </i>(<i>donde TEventArgs: EventArgs</i>)
   </li>
 </ul>
 
-<p>Con este <em>delegado</em> genérico, la declaración de un evento <em>X</em> en la clase C seguirá el siguiente esquema recomendado:</p>
+<p>Con este tipo genérico <em>delegate</em>, la declaración de un evento <em>X</em> en la clase C seguirá el siguiente esquema recomendado:</p>
 <ul>
   <li>definir un tipo <i>XEventArgs </i>derivado de <i>EventArgs </i>para encapsular la información sobre el evento <i>X</i>
   </li>
@@ -1216,21 +1216,21 @@
 <p>destinado a «publicar» el evento X a los suscriptores.</p>
 <p>Consideremos el siguiente ejemplo:</p>
 <ul>
-  <li>una clase <i>Emisor </i>encapsula una temperatura. Esta temperatura se monitoriza. Cuando dicha temperatura supera un umbral determinado, debe lanzarse un evento. Llamaremos a este evento <i>TemperatureTropHaute</i>. La información sobre este evento se encapsulará en un tipo <i>TemperatureTropHauteEventArgs.</i>
+  <li>una clase <i>Emetteur </i>encapsula una temperatura. Se monitoriza dicha temperatura. Cuando esta temperatura supera un umbral determinado, debe lanzarse un evento. Llamaremos a este evento <i>TemperatureTropHaute</i>. La información sobre este evento se encapsulará en un tipo <i>TemperatureTropHauteEventArgs.</i>
   </li>
-  <li>Una clase <i>Suscriptor </i>se suscribe al evento anterior. Cuando se le notifica el evento, muestra un mensaje en la consola.
+  <li>Una clase <i>Souscripteur </i>se suscribe al evento anterior. Cuando recibe la notificación del evento, muestra un mensaje en la consola.
   </li>
-  <li>Un programa de consola crea un emisor y dos suscriptores. Introduce las temperaturas mediante el teclado y las registra en una instancia <i>Emisor</i>. Si esta es demasiado alta, la instancia <i>Emisor </i>publica el evento <i>TemperatureTropHaute.</i>
+  <li>Un programa de consola crea un emisor y dos suscriptores. Introduce las temperaturas mediante el teclado y las registra en una instancia de tipo <i>Emetteur</i>. Si esta es demasiado alta, la instancia de tipo <i>Emetteur </i>publica el evento <i>TemperatureTropHaute.</i>
   </li>
 </ul>
 
-<p>Para cumplir con el método recomendado de gestión de eventos, definimos primero el tipo <em>TemperatureTropHauteEventArgs</em> para encapsular la información sobre el evento:</p>
+<p>Para cumplir con el método recomendado de gestión de eventos, definimos en primer lugar el tipo <em>TemperatureTropHauteEventArgs</em> para encapsular la información sobre el evento:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span> System;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">namespace</span> Chap6 {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">public</span> <span style="color:#0000ff">class</span> <span style="color:#2b91af">TemperatureTropHauteEventArgs</span>:<span style="color:#2b91af">EventArgs</span> {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        // temperatura durante evt</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        // Temperatura en el momento del evento</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">public</span> <span style="color:#0000ff">decimal</span> Temperature { <span style="color:#0000ff">get</span>; <span style="color:#0000ff">set</span>; }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        // fabricantes</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">public</span> TemperatureTropHauteEventArgs() {</span></span>
@@ -1250,19 +1250,19 @@
 <p>La clase <em>Emetteur</em> es la siguiente:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span> System;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">namespace</span> Chap6 {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">public</span> <span style="color:#0000ff">class</span> <span style="color:#2b91af">Emetteur</span> {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">static</span> <span style="color:#0000ff">decimal</span> SEUIL = 19;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        // temperatura observada</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">private</span> <span style="color:#0000ff">decimal</span> temperature;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        // nombre de la fuente</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">public</span> <span style="color:#0000ff">string</span> Nom { <span style="color:#0000ff">get</span>; <span style="color:#0000ff">set</span>; }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        // suceso comunicado</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        // evento notificado</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">public</span> <span style="color:#0000ff">event</span> <span style="color:#2b91af">EventHandler</span>&lt;<span style="color:#2b91af">TemperatureTropHauteEventArgs</span>&gt; TemperatureTropHaute;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        // temperatura de lectura/escritura</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        // lectura/escritura de temperatura</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">public</span> <span style="color:#0000ff">decimal</span> Temperature {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">get</span> {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">                <span style="color:#0000ff">return</span> temperature;</span></span>
@@ -1270,15 +1270,15 @@
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">set</span> {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">                temperature = <span style="color:#0000ff">value</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">                <span style="color:#0000ff">if</span> (temperature &gt; SEUIL) {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">                    // se notifica el suceso a los abonados</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                    // se notifica el evento a los abonados</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">                    OnTemperatureTropHaute(<span style="color:#0000ff">new</span> <span style="color:#2b91af">TemperatureTropHauteEventArgs</span>(temperature));</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">                }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        // notificar un suceso</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        // notificación de un evento</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">protected</span> <span style="color:#0000ff">virtual</span> <span style="color:#0000ff">void</span> OnTemperatureTropHaute(<span style="color:#2b91af">TemperatureTropHauteEventArgs</span> evt) {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            // emisión del evento TemperatureTropHaute a los abonados</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            // Envío del evento TemperatureTropHaute a los suscriptores</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            TemperatureTropHaute(<span style="color:#0000ff">this</span>, evt);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
@@ -1286,30 +1286,30 @@
 </code></pre></div>
 
 <ul>
-  <li>línea 5: el umbral de temperatura por encima del cual se publicará el evento <i>TemperatureTropHaute</i>.
+  <li>línea 5: el umbral de temperatura a partir del cual se publicará el evento <i>TemperatureTropHaute</i>.
   </li>
   <li>línea 10: el emisor tiene un nombre para su identificación
   </li>
   <li>línea 12: el evento <i>TemperatureTropHaute</i>.
   </li>
-  <li>líneas 15-26: el método <i>get </i>que devuelve la temperatura y el método <i>set </i>que la registra. Es el método <i>set </i>el que publica el evento <i>TemperatureTropHaute </i>si la temperatura que se va a registrar supera el umbral de la línea 5. Hace que se publique el evento mediante el método <i>OnTemperatureTropHauteHandler </i>de la línea 29, pasándole como parámetro un objeto <i>TemperatureTropHauteEventArgs </i>en el que se ha registrado la temperatura que ha superado el umbral.
+  <li>Líneas 15-26: el método <i>get, </i>que devuelve la temperatura, y el método <i>set, </i>que la registra. Es el método <i>set </i>el que publica el evento <i>TemperatureTropHaute </i>si la temperatura que se va a registrar supera el umbral de la línea 5. Este método hace que se publique el evento mediante el método <i>OnTemperatureTropHauteHandler </i>de la línea 29, pasándole como parámetro un objeto <i>TemperatureTropHauteEventArgs </i>en el que se ha registrado la temperatura que ha superado el umbral.
   </li>
-  <li>líneas 29-32: el evento <i>TemperatureTropHaute </i>se publica con el emisor como primer parámetro y el objeto <i>TemperatureTropHauteEventArgs </i>recibido como parámetro como segundo parámetro.
+  <li>líneas 29-32: se publica el evento <i>TemperatureTropHaute </i>con el propio emisor como primer parámetro y el objeto <i>TemperatureTropHauteEventArgs </i>recibido como parámetro como segundo parámetro.
   </li>
 </ul>
 
-<p>La clase <em>Suscriptor</em> que se suscribirá al evento <em>TemperatureTropHaute</em> es la siguiente:</p>
+<p>La clase <em>Souscripteur,</em> que se suscribirá al evento <em>TemperatureTropHaute,</em> es la siguiente:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span> System;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">namespace</span> Chap6 {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">public</span> <span style="color:#0000ff">class</span> <span style="color:#2b91af">Souscripteur</span> {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        // nombre</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">public</span> <span style="color:#0000ff">string</span> Nom { <span style="color:#0000ff">get</span>; <span style="color:#0000ff">set</span>; }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        // gestor de eventos TemperatureTropHaute</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        // administrador del evento TemperatureTropHaute</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">public</span> <span style="color:#0000ff">void</span> EvtTemperatureTropHaute(<span style="color:#0000ff">object</span> source, <span style="color:#2b91af">TemperatureTropHauteEventArgs</span> e) {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            // pantalla de la consola del operador</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            // visualización en la consola del operador</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#2b91af">Console</span>.WriteLine(<span style="color:#a31515">&quot;Souscripteur [{0}] : la source [{1}] a signalé une température trop haute : [{2}]&quot;</span>, Nom, ((<span style="color:#2b91af">Emetteur</span>)source).Nom, e.Temperature);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
@@ -1319,9 +1319,9 @@
 <ul>
   <li>línea 6: cada suscriptor se identifica mediante un nombre.
   </li>
-  <li>líneas 9-12: el método que se asociará al evento <i>TemperatureTropHaute</i>. Tiene la firma del tipo <i>delegado EventHandler&lt;TEventArgs&gt; </i>que debe tener un controlador de eventos. El método muestra en la consola: el nombre del suscriptor que muestra el mensaje, el nombre del emisor que ha notificado el evento y la temperatura que lo ha desencadenado.
+  <li>líneas 9-12: el método que se asociará al evento <i>TemperatureTropHaute</i>. Tiene la firma de tipo <i>delegate EventHandler&lt;TEventArgs&gt; </i>que debe tener un gestor de eventos. El método muestra en la consola: el nombre del suscriptor que muestra el mensaje, el nombre del emisor que ha notificado el evento y la temperatura que lo ha desencadenado.
   </li>
-  <li>La suscripción al evento <i>TemperatureTropHaute </i>de un objeto <i>Emisor </i>no se realiza en la clase <i>Suscriptor</i>. Se llevará a cabo mediante una clase externa.
+  <li>La suscripción al evento <i>TemperatureTropHaute </i>de un objeto <i>Emetteur </i>no se realiza en la clase <i>Souscripteur</i>. La llevará a cabo una clase externa.
   </li>
 </ul>
 
@@ -1331,34 +1331,34 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">namespace</span> Chap6 {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">class</span> <span style="color:#2b91af">Program</span> {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">static</span> <span style="color:#0000ff">void</span> Main(<span style="color:#0000ff">string</span>[] args) {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            // creación de un transmisor evts</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            // creación de un emisor de eventos</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#2b91af">Emetteur</span> e1 = <span style="color:#0000ff">new</span> <span style="color:#2b91af">Emetteur</span>() { Nom = <span style="color:#a31515">&quot;e&quot;</span> };</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            // creación de una tabla de 2 abonados</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            // creación de una tabla con 2 suscriptores</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#2b91af">Souscripteur</span>[] souscripteurs = <span style="color:#0000ff">new</span> <span style="color:#2b91af">Souscripteur</span>[2];</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">for</span> (<span style="color:#0000ff">int</span> i = 0; i &lt; souscripteurs.Length; i++) {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">                // creación abonado</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                // creación de un suscriptor</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">                souscripteurs[i] = <span style="color:#0000ff">new</span> <span style="color:#2b91af">Souscripteur</span>() { Nom = <span style="color:#a31515">&quot;s&quot;</span> + i };</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">                // lo suscribimos al evento TemperatureTropHaute de e1</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                // se le suscribe al evento TemperatureTropHaute de e1</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">                e1.TemperatureTropHaute += souscripteurs[i].EvtTemperatureTropHaute;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            // las temperaturas se leen desde el teclado</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            // se leen las temperaturas desde el teclado</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">decimal</span> temperature;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#2b91af">Console</span>.Write(<span style="color:#a31515">&quot;Température (rien pour arrêter) : &quot;</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">string</span> saisie = <span style="color:#2b91af">Console</span>.ReadLine().Trim();</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            // siempre que la línea introducida no esté vacía</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">while</span> (saisie != <span style="color:#a31515">&quot;&quot;</span>) {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">                // ¿la entrada es un número decimal?</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                // ¿Es la entrada un número decimal?</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">                <span style="color:#0000ff">if</span> (<span style="color:#0000ff">decimal</span>.TryParse(saisie, <span style="color:#0000ff">out</span> temperature)) {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">                    // temperatura correcta - registrada</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                    // temperatura correcta: se guarda</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">                    e1.Temperature = temperature;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">                } <span style="color:#0000ff">else</span> {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">                    // informar del error</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                    // se indica el error</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">                    <span style="color:#2b91af">Console</span>.WriteLine(<span style="color:#a31515">&quot;Température incorrecte&quot;</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">                }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">                // nueva entrada</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">                <span style="color:#2b91af">Console</span>.Write(<span style="color:#a31515">&quot;Température (rien pour arrêter) : &quot;</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">                saisie = <span style="color:#2b91af">Console</span>.ReadLine().Trim();</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            }//mientras que</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            }//while</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
@@ -1371,7 +1371,7 @@
   </li>
   <li>líneas 20-32: bucle de introducción de temperaturas mediante el teclado
   </li>
-  <li>línea 24: si la temperatura introducida es correcta, se transmite al objeto <i>Emisor </i>e1, que activará el evento <i>TemperatureTropHaute </i>si la temperatura es superior a 19 °C.
+  <li>línea 24: si la temperatura introducida es correcta, se transmite al objeto <i>Emetteur </i>e1, que activará el evento <i>TemperatureTropHaute </i>si la temperatura es superior a 19 °C.
   </li>
 </ul>
 

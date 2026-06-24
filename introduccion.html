@@ -369,14 +369,14 @@
   
   
     <li class="md-nav__item">
-      <a href="----fundamentos-del-lenguaje-c.html" class="md-nav__link">
+      <a href="----conceptos-basicos-del-lenguaje-c.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    3.     Fundamentos del lenguaje C#
+    3.     Conceptos básicos del lenguaje C#
   
 
     
@@ -423,14 +423,14 @@
   
   
     <li class="md-nav__item">
-      <a href="clases-net-de-uso-comun.html" class="md-nav__link">
+      <a href="clases-net-de-uso-habitual.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    5. Clases .NET de uso común
+    5. Clases .NET de uso habitual
   
 
     
@@ -558,14 +558,14 @@
   
   
     <li class="md-nav__item">
-      <a href="los-subprocesos-de-ejecucion.html" class="md-nav__link">
+      <a href="los-hilos-de-ejecucion.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    10. Los subprocesos de ejecución
+    10. Los hilos de ejecución
   
 
     
@@ -707,47 +707,47 @@
 
 
 <h1 id="1-introduccion">1. <span style="color: #365f91">Introducción</span></h1>
-<p>El PDF de este documento está disponible |<a href="https://1drv.ms/b/c/f53a919f43d27eb5/IQBDcHHTzkxtQaanZ_B0dGVyAaV8dhndwNq1xKV0DkD--p0?e=uUMBxP">AQUÍ</a>|.</p>
-<p>Los ejemplos de este documento están disponibles |<a href="https://1drv.ms/u/c/f53a919f43d27eb5/IQDj2R-lBuB7RbjatgFFhtn8AeyiPCn-AcMNUyuUG9A8l-0?e=zkeyjP">AQUÍ</a>|.</p>
-<p>C# es un lenguaje reciente. Estuvo disponible en sucesivas versiones beta desde el año 2000 antes de salir oficialmente al mercado en febrero de 2002, al mismo tiempo que la plataforma .NET 1.0 de Microsoft a la que está vinculado. C# solo puede funcionar con este entorno de ejecución. Este pone a disposición de los programas que se ejecutan en él un conjunto muy amplio de clases. A primera vista, se puede decir que la plataforma .NET es un entorno de ejecución análogo a una máquina virtual Java. Sin embargo, cabe señalar dos diferencias:</p>
+<p>El PDF de este documento está disponible |<a href="https://1drv.ms/b/c/f53a919f43d27eb5/IQBDcHHTzkxtQaanZ_B0dGVyAaV8dhndwNq1xKV0DkD--p0?e=Tvyg6w">AQUÍ</a>|.</p>
+<p>Los ejemplos de este documento están disponibles |<a href="https://1drv.ms/u/c/f53a919f43d27eb5/IQDj2R-lBuB7RbjatgFFhtn8AeyiPCn-AcMNUyuUG9A8l-0?e=HIk3eQ">AQUÍ</a>|.</p>
+<p>C# es un lenguaje reciente. Estuvo disponible en sucesivas versiones beta desde el año 2000, antes de salir oficialmente al mercado en febrero de 2002, al mismo tiempo que la plataforma .NET 1.0 de Microsoft, a la que está vinculado. C# solo puede funcionar con este entorno de ejecución. Este pone a disposición de los programas que se ejecutan en él un conjunto muy amplio de clases. A grandes rasgos, se puede decir que la plataforma .NET es un entorno de ejecución similar a una máquina virtual Java. Sin embargo, cabe señalar dos diferencias:</p>
 <ul>
-  <li>Java se ejecuta en diferentes sistemas operativos (Windows, Unix, Macintosh) desde sus inicios. En 2002, la plataforma .NET solo se ejecutaba en máquinas Windows. Desde hace unos años, el proyecto Mono permite utilizar la plataforma .NET en sistemas como Unix y Linux. La versión actual de Mono (febrero de 2008) es compatible con .NET 1.1 y con elementos de .NET 2.0.
+  <li>Java se ejecuta en diferentes sistemas operativos (Windows, Unix, Macintosh) desde sus inicios. En 2002, la plataforma .NET solo se ejecutaba en equipos con Windows. Desde hace unos años, el proyecto Mono [http://www.mono-project.com] permite utilizar la plataforma .NET en sistemas operativos como Unix y Linux. La versión actual de Mono (febrero de 2008) es compatible con .NET 1.1 y con algunos elementos de .NET 2.0.
   </li>
-  <li>La plataforma .NET permite la ejecución de programas escritos en diferentes lenguajes. Basta con que el compilador de estos sepa generar código .NET (Intermediate Language), código ejecutado por la máquina virtual .NET. Todas las clases de .NET están disponibles para los lenguajes compatibles con .NET, lo que tiende a difuminar las diferencias entre lenguajes en la medida en que los programas utilizan ampliamente estas clases. La elección de un lenguaje .NET se convierte en una cuestión de gustos más que de rendimiento.
+  <li>La plataforma .NET permite la ejecución de programas escritos en diferentes lenguajes. Basta con que el compilador de dichos lenguajes sea capaz de generar código IL (lenguaje intermedio), código que es ejecutado por la máquina virtual .NET. Todas las clases de .NET están disponibles para los lenguajes compatibles con .NET, lo que tiende a difuminar las diferencias entre lenguajes, en la medida en que los programas utilizan ampliamente estas clases. La elección de un lenguaje .NET se convierte en una cuestión de gusto más que de rendimiento.
   </li>
 </ul>
 
-<p>En 2002, C# utilizaba la plataforma .NET 1.0. Por entonces, C# era en gran medida una «copia» de Java y .NET una biblioteca de clases muy similar a la de la plataforma de desarrollo Java. En el marco del aprendizaje del lenguaje, se pasaba de un entorno C# a uno Java sin sentirse realmente desorientado. Incluso existían herramientas de conversión de código fuente de un lenguaje a otro. Desde entonces, las cosas han cambiado. Cada lenguaje y cada plataforma de desarrollo tiene ahora sus propias particularidades. Ya no resulta tan sencillo transferir las competencias de un ámbito a otro.</p>
-<p>C# 3.0 y el marco .NET 3.5 aportan muchas novedades. La más importante es probablemente LINQ (Language INtegrated Query), que permite realizar consultas de manera uniforme, de forma similar a la del lenguaje SQL, secuencias de objetos  procedentes de estructuras en memoria, como tablas y listas, de bases de datos (SQL Server únicamente por el momento —febrero de 2008—) o de archivos XML. </p>
-<p>Este documento no es un curso exhaustivo. Por ejemplo, no se aborda LINQ. Está destinado a personas que ya tienen conocimientos de programación y desean descubrir los fundamentos de C#.  Es una revisión del documento original publicado en 2002. </p>
+<p>En 2002, C# utilizaba la plataforma .NET 1.0. Por entonces, C# era en gran medida una «copia» de Java y .NET una biblioteca de clases muy similar a la de la plataforma de desarrollo de Java. A la hora de aprender el lenguaje, se pasaba de un entorno de C# a uno de Java sin sentirse realmente desorientado. Incluso existían herramientas para convertir el código fuente de un lenguaje a otro. Desde entonces, las cosas han cambiado. Cada lenguaje y cada plataforma de desarrollo tiene ahora sus propias particularidades. Ya no resulta tan sencillo transferir los conocimientos de un ámbito a otro.</p>
+<p>C# 3.0 y el marco .NET 3.5 aportan muchas novedades. Probablemente, la más importante sea LINQ (Language INtegrated Query), que permite realizar consultas de forma uniforme, de manera similar a la del lenguaje SQL, secuencias de objetos procedentes de estructuras en memoria, como matrices y listas, de bases de datos (SQL Server, únicamente por el momento —febrero de 2008—) o de archivos XML. </p>
+<p>Este documento no es un curso exhaustivo. Por ejemplo, no se aborda LINQ. Está dirigido a personas que ya tienen conocimientos de programación y desean descubrir los fundamentos de C#. Se trata de una revisión del documento original publicado en 2002. </p>
 <p>Varios libros me han ayudado a escribir este curso:</p>
-<p>Para el version 2002:</p>
+<p>Para la versión de 2002:</p>
 <ul>
   <li>Professional C# programming, Ediciones Wrox
   </li>
-  <li>C# y .NET, Gérard Leblanc, Ediciones Eyrolles
+  <li>C# y .NET, Gérard Leblanc, Editorial Eyrolles
   </li>
 </ul>
 
 <p>En su momento, me parecieron excelentes estas dos obras. Desde entonces, Gérard Leblanc ha publicado versiones actualizadas, entre las que se encuentra la siguiente:</p>
 <ul>
-  <li>C# y .NET 2005, Gérard Leblanc, Ediciones Eyrolles
+  <li>«C# y .NET 2005», de Gérard Leblanc, editorial Eyrolles
   </li>
 </ul>
 
 <p>Para la revisión de 2008, utilicé las siguientes fuentes:</p>
 <ul>
-  <li>el documento inicial de 2002. Este documento, resultado de un copiar y pegar de mi curso de Java, contenía tanto errores tipográficos como errores más graves, como afirmar que los tipos primitivos como <i>System.Int32 </i>eran clases, cuando en realidad son estructuras. Mea culpa...
+  <li>el documento original de 2002. Este documento, resultado de un «copiar y pegar» de mi curso de Java, contenía tanto errores tipográficos como errores más graves, como afirmar que los tipos primitivos como <i>System.Int32 </i>eran clases, cuando en realidad son estructuras. Mea culpa...
   </li>
   <li>la documentación de Visual Studio Express 2008
   </li>
-  <li>el libro C# 3.0 in a Nutshell de Joseph y Ben Albahari, publicado por O&#x27;Reilly, uno de los mejores libros de programación que he tenido la oportunidad de leer.
+  <li>el libro «C# 3.0 in a Nutshell», de Joseph y Ben Albahari, publicado por O&#x27;Reilly, uno de los mejores libros de programación que he tenido la oportunidad de leer.
   </li>
 </ul>
 
-<p>Serge Tahé, mayo de 2008</p>
-<p>Desde mayo de 2008, C# ha evolucionado, por supuesto. Sin embargo, este documento sigue siendo de gran utilidad para el aprendizaje de este lenguaje. Como complemento a este curso, se incluye una presentación del ORM (Object Relational Mapper) <strong>Entity Framework</strong> en el artículo <strong>«Introducción a ORM Entity Framework 5 Código</strong> First» en URL [<a href="https://stahe.github.io/es-ef5cf-oct-2012/">https://stahe.github.io/es-ef5cf-oct-2012/</a>].</p>
-<p>Serge Tahé, octubre de 2013</p>
+<p><strong>Serge Tahé</strong>, mayo de 2008</p>
+<p>Desde mayo de 2008, C# ha evolucionado, como es lógico. No obstante, este documento sigue siendo de gran utilidad para el aprendizaje de este lenguaje. Como complemento a este curso, se incluye una presentación del ORM (Object Relational Mapper) <strong>Entity Framework</strong> en el artículo <strong>«Introducción a ORM Entity Framework 5 Code</strong> First» en URL [<a href="https://stahe.github.io/es-ef5cf-oct-2012/"><u><span style="color: #0000ff">Introducción a Entity Framework 5 Code First a través de ejemplos (2012)</span></u></a>].</p>
+<p><strong>Serge Tahé</strong>, octubre de 2013</p>
 
 
 
